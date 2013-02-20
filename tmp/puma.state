@@ -1,0 +1,14 @@
+---
+pid: 97677
+config: !ruby/object:Puma::Configuration
+  options:
+    :min_threads: 8
+    :max_threads: 24
+    :quiet: true
+    :binds:
+    - tcp://127.0.0.1:8080
+    :config_file: config/environment.rb
+    :environment: development
+    :state: tmp/puma.state
+    :pidfile: tmp/pids/puma.pid
+    :control_auth_token: 223c2381b16c7ae931d70fae35de8
